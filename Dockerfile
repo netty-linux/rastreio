@@ -17,5 +17,6 @@ RUN chown -R www-data:www-data /var/www/html/pedidos /var/www/html/admin
 # Expose HTTP port
 EXPOSE 80
 
-# Start Apache
-CMD ["apache2-foreground"]
+# Ensure correct ownership on the persistent disk at runtime
+# (disk mount on Render overrides build-time chown)
+CMD chown -R www-data:www-data /var/www/html/pedidos && apache2-foreground

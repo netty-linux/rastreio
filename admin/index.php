@@ -129,7 +129,7 @@ if ($logado && ($_POST['acao'] ?? '') === 'salvar') {
                 json_encode($dados, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)
             );
             if ($ok === false) {
-                $msg_erro = 'Não foi possível salvar. Confira a permissão de escrita na pasta /admin/ (chmod 755).';
+                $msg_erro = 'Não foi possível salvar. Confira as permissões no disco persistente (pasta pedidos/).';
             } else {
                 $msg_ok = 'Configurações salvas com sucesso.';
             }
