@@ -79,7 +79,7 @@ $config = [
 // Este arquivo permanece intacto: se o JSON sumir ou corromper, o sistema volta
 // automaticamente aos valores padrão definidos acima.
 // -----------------------------------------------------------------------------
-$config_overrides_file = __DIR__ . '/admin/data.json';
+$config_overrides_file = __DIR__ . '/pedidos/.admin-config.json';
 if (is_file($config_overrides_file)) {
     $overrides = json_decode(file_get_contents($config_overrides_file), true);
     if (is_array($overrides)) {

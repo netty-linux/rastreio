@@ -16,7 +16,7 @@ session_start();
 date_default_timezone_set('America/Sao_Paulo');
 require_once __DIR__ . '/../config.php';
 
-$data_file = __DIR__ . '/data.json';
+$data_file = dirname(__DIR__) . '/pedidos/.admin-config.json';
 
 // Campos que o painel pode gravar (whitelist — evita injeção de chaves arbitrárias)
 $campos = [
