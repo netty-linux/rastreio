@@ -1,0 +1,17 @@
+{
+  "nome_loja": "Minha Loja",
+  "cor_primaria": "#0a4f9e",
+  "cor_secundaria": "#ffcc00",
+  "logo_url": "",
+  "cidade_origem": "São Paulo - SP",
+  "prazo_min_padrao": 5,
+  "prazo_max_padrao": 7,
+  "resend_api_key": "",
+  "resend_from": "",
+  "nome_email": "",
+  "email_template": "padrao",
+  "site_url": "http://localhost/rastreio",
+  "cron_token": "",
+  "cnpj": "",
+  "endereco_loja": ""
+}
